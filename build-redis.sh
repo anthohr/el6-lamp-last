@@ -2,7 +2,7 @@
 REDIS_VERSION=3.2.3
 echo Downloading deps :
 rpm -ivh  http://dl.fedoraproject.org/pub/epel/6/$(uname -m)/epel-release-6-8.noarch.rpm
-yum install gcc wget rpm-build jemalloc-devel tcl -y
+yum install gcc wget rpm-build jemalloc-devel tcl tar -y
 
 wget "http://download.redis.io/releases/redis-${REDIS_VERSION}.tar.gz" -cO SOURCES/redis-${REDIS_VERSION}.tar.gz
 
